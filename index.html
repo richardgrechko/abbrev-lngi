@@ -11,7 +11,7 @@
         <script>
         let t = 0;
         setInterval(_=>{
-            document.getElementById('test').textContent = "10^10^" + t + " ="
+            document.getElementById('test').textContent = "10^10^" + t.toFixed(3) + " ="
             document.getElementById('result').textContent = new powAbbrev(10, 10**t).toString()
             t += 0.00001 + Math.sqrt(t)/100000
         },0)
