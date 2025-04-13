@@ -5,13 +5,13 @@
         <title>abbreviation lngi</title>
     </head>
     <body>
-        <h1 id="test" style="text-align: center; font-size: 4em; color: white">lngi</h1>
+        <h1 id="test" style="text-align: center; font-size: 2em; color: white">lngi</h1>
         <h1 id="result" style="text-align: center; font-size: 4em; color: white">lngi</h1>
         <script src="powAbbrev.js"></script>
         <script>
         let t = 0;
         setInterval(_=>{
-            document.getElementById('test').textContent = "10^" + (10**t) + " ="
+            document.getElementById('test').textContent = "10^10^" + t + " ="
             document.getElementById('result').textContent = new powAbbrev(10, 10**t).toString()
             t += 0.00001 + Math.sqrt(t/1000)
         },0)
