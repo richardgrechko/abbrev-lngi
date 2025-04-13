@@ -13,7 +13,7 @@
         setInterval(_=>{
             document.getElementById('test').textContent = "10^10^" + t + " ="
             document.getElementById('result').textContent = new powAbbrev(10, 10**t).toString()
-            t += 0.00001 + Math.sqrt(t/1000)
+            t += 0.00001 + Math.sqrt(t)/100000
         },0)
         </script>
     </body>
